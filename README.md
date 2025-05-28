@@ -3,11 +3,11 @@ StudentID: 111550159 \
 Name: Li-Zhong Szu-Tu (司徒立中)
 
 ## Introduction
-In this task, the dataset is designed for image restoration, consisting of 1600 paired training images for each degradation type (rain and snow), where each pair includes a degraded image and its corresponding clean image. The test set contains 100 images with unknown degradation types (either rain or snow). The objective is to perform image restoration by predicting clean images from degraded inputs, effectively handling both deraining and desnowing tasks.
+In this task, the dataset is designed for image restoration, consisting of 1600 paired training images for each degradation type (rain and snow), where each pair includes a degraded image and its corresponding clean image. The test set contains 100 images with unknown degradation types (either rain or snow). The objective is to perform image restoration by predicting clean images from degraded inputs, effectively handling both deraining and desnowing tasks.\
 \
-The performance is evaluated solely using Peak Signal-to-Noise Ratio (PSNR). PSNR is a widely used metric that measures the quality of reconstructed images by comparing them to their ground-truth clean versions, calculated as the ratio between the maximum possible pixel value and the mean squared error between the restored and clean images. Higher PSNR values indicate better image restoration quality.
+The performance is evaluated solely using Peak Signal-to-Noise Ratio (PSNR). PSNR is a widely used metric that measures the quality of reconstructed images by comparing them to their ground-truth clean versions, calculated as the ratio between the maximum possible pixel value and the mean squared error between the restored and clean images. Higher PSNR values indicate better image restoration quality.\
 \
-Additionally, the strategies for this task are subject to specific constraints. First, no external data is allowed, ensuring the focus remains on model architecture design rather than data augmentation or collection. Second, no pre-trained weights can be used, meaning the model must be trained from scratch. The chosen model for this task is PromptIR, which is capable of handling multiple degradation effects (rain and snow) simultaneously within a unified framework.
+Additionally, the strategies for this task are subject to specific constraints. First, no external data is allowed, ensuring the focus remains on model architecture design rather than data augmentation or collection. Second, no pre-trained weights can be used, meaning the model must be trained from scratch. The chosen model for this task is PromptIR, which is capable of handling multiple degradation effects (rain and snow) simultaneously within a unified framework.\
 \
 The dataset can be downloaded Here!
 
