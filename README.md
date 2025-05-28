@@ -1,2 +1,37 @@
-# Rain-Snow-Image-Restoration
-This is the HW4 in Computer Vision Spring 2025 at NYCU.
+# NYCU Computer Vision 2025 Spring HW4
+StudentID: 111550159 \
+Name: Li-Zhong Szu-Tu (司徒立中)
+
+## Introduction
+In this task, the dataset is designed for image restoration, consisting of 1600 paired training images for each degradation type (rain and snow), where each pair includes a degraded image and its corresponding clean image. The test set contains 100 images with unknown degradation types (either rain or snow). The objective is to perform image restoration by predicting clean images from degraded inputs, effectively handling both deraining and desnowing tasks.
+\
+The performance is evaluated solely using Peak Signal-to-Noise Ratio (PSNR). PSNR is a widely used metric that measures the quality of reconstructed images by comparing them to their ground-truth clean versions, calculated as the ratio between the maximum possible pixel value and the mean squared error between the restored and clean images. Higher PSNR values indicate better image restoration quality.
+\
+Additionally, the strategies for this task are subject to specific constraints. First, no external data is allowed, ensuring the focus remains on model architecture design rather than data augmentation or collection. Second, no pre-trained weights can be used, meaning the model must be trained from scratch. The chosen model for this task is PromptIR, which is capable of handling multiple degradation effects (rain and snow) simultaneously within a unified framework.
+\
+The dataset can be downloaded Here!
+
+## How to install
+How to install dependences
+```
+conda env create -f environment.yml
+conda activate promptir
+```
+
+## How to run
+How to execute the code
+```
+# Training
+python train.py --de_type denoise derain desnow --epochs 100 --patch_size 256 --num_gpu 2
+
+# Inference
+python demo.py --test_path './test/demo/' --output_path './output/demo/' --ckpt_path 'best.ckpt'
+
+```
+My model weights can be downloaded Here!
+
+## Performance snapshot
+A shapshot of the leaderboard
+
+\
+Last Update: 2025/05/28 10:40 p.m. (GMT+8)
