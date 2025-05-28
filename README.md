@@ -9,7 +9,7 @@ The performance is evaluated solely using Peak Signal-to-Noise Ratio (PSNR). PSN
 \
 Additionally, the strategies for this task are subject to specific constraints. First, no external data is allowed, ensuring the focus remains on model architecture design rather than data augmentation or collection. Second, no pre-trained weights can be used, meaning the model must be trained from scratch. The chosen model for this task is PromptIR, which is capable of handling multiple degradation effects (rain and snow) simultaneously within a unified framework.\
 \
-The dataset can be downloaded Here!
+The dataset can be downloaded [Here](https://drive.google.com/drive/folders/1Q4qLPMCKdjn-iGgXV_8wujDmvDpSI1ul?usp=share_link)!
 
 ## How to install
 How to install dependences
@@ -28,10 +28,12 @@ python train.py --de_type denoise derain desnow --epochs 100 --patch_size 256 --
 python demo.py --test_path './test/demo/' --output_path './output/demo/' --ckpt_path 'best.ckpt'
 
 ```
-My model weights can be downloaded Here!
+My model weights can be downloaded [Here](https://drive.google.com/drive/folders/1wz4kqwkiQP1b7oARfwDfmJtsvmnf5ekY?usp=sharing)!
 
 ## Performance snapshot
 A shapshot of the leaderboard
+Please note that my student ID is 111550159, there's a typo on the leaderboard.
+![喔不](https://github.com/user-attachments/assets/9f9a4595-00bd-4482-bdad-c394e2b28aaa)
 
 \
-Last Update: 2025/05/28 10:40 p.m. (GMT+8)
+Last Update: 2025/05/29 12:21 a.m. (GMT+8)
