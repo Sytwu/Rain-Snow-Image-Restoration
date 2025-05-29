@@ -12,13 +12,22 @@ Additionally, the strategies for this task are subject to specific constraints. 
 The dataset can be downloaded [Here](https://drive.google.com/drive/folders/1Q4qLPMCKdjn-iGgXV_8wujDmvDpSI1ul?usp=share_link)!
 
 ## Code Reliability
+Belows are what I've modified from PromptIR, following flake8 format. \
+\
 utils/dataset_utils.py \
-\
-options.py \
-\
-train.py \
+-Add desnow \
 \
 demo.py \
+-Add TTAs \
+-Add new mode for desnow \
+\
+options.py \
+-Add argument 'desnow' \
+\
+train.py \
+-Multi GPU \
+-Save best ckpt \
+-Add PSNR to logs \
 \
 ![image](https://github.com/user-attachments/assets/c541fc09-0ec5-4c1b-bbfa-a5007fd23cf1) \
 (The code only includes what I have modified, rather than the full content.)
